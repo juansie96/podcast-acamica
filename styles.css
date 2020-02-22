@@ -117,7 +117,7 @@ header {
 #episodios {
     background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
     transform: skew(0deg, -5deg);
-    height: 1050px;
+    height: 950px;
 }
 
 #episodios h2 {
@@ -139,9 +139,74 @@ header {
     transform: skew(0deg, 5deg);
 }
 
+.iframe-container {
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+    width: 88%;
+    height: 630px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
+.iframe-container div {
+    box-sizing: border-box;
+    width: 45%;
+    display: inline-block;
+}
 
+/* 
+-------------------- NOSOTROS ------------------
+*/
 
+.nosotros-container {
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    align-items: center;
+}
+.phone-container {
+    display: inline-block;
+    position: relative;
+    right: 100px;
+    bottom: 100px;
+}
+
+.phone-container img {
+    height: 40rem;
+}
+
+aside {
+    display: inline-block;
+    margin-bottom: 200px;
+    margin-left: 50px;
+}
+
+aside p {
+    margin-top: 24px;
+}
+
+/* 
+-------------------- ENTREVISTAS ------------------
+*/
+
+.photos {
+    display: flex;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.photos img {
+    width: 33.33%;
+}
+
+/* 
+-------------------- ENTREVISTAS ------------------
+*/
+
+#topicos {
+    margin-top: 80px;
+}
 
 /* 
 ---------------------FOR TESTING BOX ELEMENTS-----------------
