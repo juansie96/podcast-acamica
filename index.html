@@ -14,7 +14,7 @@
 
     <!-- FONTS IMPORTS -->
     <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,500,600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500,600&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -37,7 +37,7 @@
             <h1>Hello <strike>world</strike> pale blue dot<span class="blue-dot">.</span></h1>
             <p class="web-info">El portal de podcasts que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los
                 jueves cada 15 días.</p>
-            <button class="showcase-button"><a href="">CONOCÉ MÁS</a></button>
+            <button class="button showcase-button"><a href="">CONOCÉ MÁS</a></button>
         </div>
     </section>
 
@@ -105,17 +105,50 @@
 
     <section id="topicos">
         <div class="container">
-            <h2>Algunos de nuestros temas</h2>
+        <h2>Algunos de nuestros temas</h2>
+            <div class="topicos-container">
+                <div class="single-topic-container">
+                    <img src="./assets/imgs/icon1.svg" alt="">
+                    <h3>Trabajo Remoto</h3>
+                </div>
 
-            <img src="./assets/imgs/icon1.svg" alt="">
-            <img src="./assets/imgs/icon2.svg" alt="">
-            <img src="./assets/imgs/icon3.svg" alt="">
-            <img src="./assets/imgs/icon4.svg" alt="">
+                <div class="single-topic-container">
+                    <img src="./assets/imgs/icon2.svg" alt="">
+                    <h3>Repensando la programación</h3>
+                </div>
+
+                <div class="single-topic-container">
+                    <img src="./assets/imgs/icon3.svg" alt="">
+                    <h3>Bases del código</h3>
+                </div>
+
+                <div class="single-topic-container">
+                    <img src="./assets/imgs/icon4.svg" alt="">
+                    <h3>Seguridad informática</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="novedades">
+        <div class="novedades-container">
+            <h2>¿Querés las últimas novedades?</h2>
+            <button class="button"><a href="">ESCUCHÁ LOS EPISODIOS</a></button>
         </div>
     </section>
 
     <footer>
-
+        <div class="container">
+            <div class="header-container">
+                <p>&copy;</p>
+                <nav class="main-nav">
+                    <li><a href="">EPISODIOS</a></li>
+                    <li><a href="">NOSOTROS</a></li>
+                    <li><a href="">ENTREVISTAS</a></li>
+                    <li><a href="">TÓPICOS</a></li>
+                </nav>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
