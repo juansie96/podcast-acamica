@@ -55,36 +55,36 @@ header {
     /* border: 1px solid red; */
 }
 
-.header-container {
+.nav-container {
     margin: 22px 0;
     display: flex;
     justify-content: space-between;
     /* border: 1px solid red; */
 }
 
-.header-container nav {
+.nav-container nav {
     display: flex;
     align-items: center;
 }
 
-.header-container nav li {
+.nav-container nav li {
     list-style: none;
     margin-left: 40px;
 }
 
-.header-container img {
+.nav-container img {
     width: 36px;
     height: 36px;
 }
 
-.header-container a {
+.nav-container a {
     text-decoration: none;
     font-size: 16px;
     letter-spacing: 0;
     line-height: 28px;
 }
 
-.header-container a:visited {
+.nav-container a:visited {
     color: #060A24;
 }
 
@@ -252,9 +252,26 @@ header {
     color: #FFFFFF;
 }
 
+#novedades button {
+    margin-top: 45px;
+}
+
 /* 
 -------------------- FOOTER ------------------
 */
+
+footer .footer-container {
+    position: relative;
+    padding: 30px 0;
+    background-color: #FFFFFF;
+    bottom: 50px;
+}
+
+footer .nav-container {
+    width: 88%;
+    margin: 0 auto;
+}
+
 
 
 
