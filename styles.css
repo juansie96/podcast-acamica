@@ -51,9 +51,8 @@ h2 {
 */
 
 .nav-container {
-    width: 86%;
     height: 5rem;
-    margin: 0 auto;
+    margin: 0 6.25rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -86,9 +85,8 @@ h2 {
 */
 
 #showcase {
-    width: 72%;
-    margin: 0 auto;
     margin-top: 7.5rem;
+    margin-left: 12.5rem;
 }
 
 #showcase .blue-dot {
@@ -96,7 +94,7 @@ h2 {
 }
 
 #showcase .web-info {
-    width: 52%;
+    width: 39.25rem;
 }
 
 #showcase .showcase-button {
@@ -109,13 +107,13 @@ h2 {
 
 #episodios {
     background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
-    transform: skew(0deg, -5deg);
-    margin-top: 5.5rem;   
+    transform: skew(0deg, -5deg);   
+    margin-top: 5rem;
 }
 
 #episodios h2 {
     color: #FFFFFF;
-    padding-top: 8rem;
+    padding-top: 6.63rem;
     margin-left: 6rem;
 }
 
@@ -132,13 +130,12 @@ h2 {
     width: 100%;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-bottom: 14.54rem;
+    padding-bottom: 11rem;
 }
 
 #episodios .iframe-container div {
     box-sizing: border-box;
     width: 47%;
-    display: inline-block;
 }
 
 #episodios .iframe-container .bottom-frame {
@@ -150,31 +147,33 @@ h2 {
 -------------------- NOSOTROS ------------------
 */
 
-#nosotros .nosotros-container {
+#nosotros {
     display: flex;
-    width: 60%;
+    width: 75%;
     margin: 0 auto;
-    align-items: center;
 }
+
 #nosotros .phone-container {
-    display: inline-block;
+    width: 45%;
+    text-align: center;
+    
+}
+
+#nosotros .phone-container .phone-img {
+    width: 30rem;
     position: relative;
-    right: 100px;
-    bottom: 100px;
+    bottom: 8rem;
 }
 
-#nosotros .phone-container img {
-    height: 40rem;
+#nosotros .aside {
+    width: 50%;
+    margin-top: 10rem;
+    margin-left: 4rem;
 }
 
-#nosotros aside {
-    display: inline-block;
-    margin-bottom: 200px;
-    margin-left: 50px;
-}
-
-#nosotros aside p {
-    margin-top: 24px;
+#nosotros .aside p {
+    margin-top: 1.5rem;
+    width: 29rem;
 }
 
 /* 
@@ -269,6 +268,44 @@ footer .nav-container {
 /* 
 -------------------- RESPONSIVE MOBILE ------------------
 */
+
+@media (min-width: 900px) and (max-width: 1150px) {
+    html {
+        font-size: 14px;
+    }
+
+    #nosotros .phone-container .phone-img {
+        width: 27rem;
+    }
+}
+
+@media (max-width: 900px) {
+    html {
+        font-size: 12px;
+    }
+
+    #nosotros .phone-container .phone-img {
+        width: 25rem;
+    }
+
+    #nosotros .aside {
+        margin-top: 5rem;
+    }
+
+    #nosotros .aside p {
+        width: 20rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    #showcase .web-info {
+        width: 30rem;
+    }
+
+
+}
 
 
 
