@@ -37,18 +37,19 @@ h2.white {
 .skew-section {
     background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
     transform: skew(0deg, -5deg);
+    overflow: hidden;
 }
 
 .skew-content {
     transform: skew(0deg, 5deg);
 }
 
-.button {
+button {
     background-color:#00F3BB;
     padding: 1rem 3.69rem;
 }
 
-.button a {
+button a {
     font-family: 'IBM Plex Mono';
     font-weight: 500;
     font-size: 1.13rem;
@@ -73,21 +74,17 @@ h2.white {
 }
 
 .nav-container img {
-    width: 36px;
-    height: 36px;
+    width: 2.25rem;
+    height: auto;
 }
 
-.nav-container .right {
+.nav-container .nav-links {
     display: flex;
 }
 
-.nav-container .right li {
-    list-style: none;
-    margin-left: 3rem;
-}
-
-.nav-container .right a {
+.nav-container .nav-links a {
     text-decoration: none;
+    margin-left: 3rem;
 }
 
 .nav-container a:visited {
@@ -95,12 +92,29 @@ h2.white {
 }
 
 /* 
+------------------------NAV MOBILE--------------------
+*/
+
+.show-menu-btn,
+.hide-menu-btn {
+    display: none;
+}
+
+#chk {
+    position: absolute;
+    visibility: hidden;
+    z-index: -1111;
+}
+
+
+/* 
 ------------------------SHOWCASE--------------------
 */
 
 #showcase {
+    width: 70%;
+    margin: auto;
     margin-top: 7.5rem;
-    margin-left: 15%;
 }
 
 #showcase .blue-dot {
@@ -108,10 +122,10 @@ h2.white {
 }
 
 #showcase .web-info {
-    width: 43%;
+    width: 55%;
 }
 
-#showcase .showcase-button {
+#showcase button {
     margin-top: 3.5rem;
 }
 
@@ -120,35 +134,27 @@ h2.white {
 */
 
 #episodios {
-    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
-    transform: skew(0deg, -5deg);   
     margin-top: 5rem;
 }
 
 #episodios .episodios-container {
-    transform: skew(0deg, 5deg);
-    padding-top: 6.63rem;
-    padding-bottom: 11rem;
+    padding: 10rem 0;
 }
 
 #episodios .iframe-container {
-    width: 86%;
-    margin: 0 auto;
+    width: 90%;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 2rem;
+    justify-content: space-around;
+    margin-bottom: 1.3rem;
 }
 
 #episodios .iframe-container div {
+    margin: 20px 0;
     box-sizing: border-box;
-    width: 47%;
+    width: 45%;
 }
-
-#episodios .iframe-container .bottom-frame {
-    margin-top: 4.5rem;
-}
-
 
 /* 
 -------------------- NOSOTROS ------------------
@@ -156,31 +162,30 @@ h2.white {
 
 #nosotros {
     display: flex;
-    width: 75%;
+    width: 80%;
     margin: 0 auto;
 }
 
+
 #nosotros .phone-container {
-    width: 45%;
+    width: 50%;
     text-align: center;
     
 }
 
 #nosotros .phone-container .phone-img {
-    width: 30rem;
+    width: 30vw;
     position: relative;
     bottom: 8rem;
 }
 
 #nosotros .aside {
-    width: 50%;
-    margin-top: 8rem;
-    margin-left: 4rem;
+    width: 40%;
+    margin-top: 10vw;
 }
 
 #nosotros .aside p {
     margin-top: 1.5rem;
-    width: 29rem;
 }
 
 #nosotros .aside h2 {
@@ -244,81 +249,127 @@ h2.white {
 */
 
 #novedades { 
-    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
-    transform: skew(0deg, -5deg);
+    margin-top: 7rem;
+    margin-bottom: -6rem;
 }
 
 #novedades h2 {
     margin-left: 0;
+    
 }
 
 #novedades .novedades-container {
-    transform: skew(0deg, 5deg);
-    padding-top: 200px;
+    padding-top: 10rem;
+    padding-bottom: 15rem;
     align-items: center;
     text-align: center; 
 }
 
 #novedades button {
-    margin-top: 45px;
+    margin-top: 2.25rem;
 }
 
 /* 
 -------------------- FOOTER ------------------
 */
 
-footer .footer-container {
-    position: relative;
-    padding: 30px 0;
+footer {
     background-color: #FFFFFF;
-    bottom: 50px;
-}
-
-footer .nav-container {
-    width: 88%;
-    margin: 0 auto;
+    height: 5rem;
+    bottom: 2.5rem;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 
 /* 
 -------------------- RESPONSIVE TABLETS ------------------
 */
 
-@media (min-width: 900px) and (max-width: 1150px) {
+/* 
+-------------------- PRIMER BREAKPOINT ------------------
+*/
+@media (max-width: 1366px) {
+
     html {
         font-size: 14px;
     }
 
-    #nosotros .phone-container .phone-img {
-        width: 26rem;
-        bottom: 6rem;
+    #nosotros {
+        width: 90%;
     }
+
+    #nosotros .aside {
+        width: 45%;
+        margin-top: 7vw;
+    }
+
 }
 
-@media (min-width: 650px) and (max-width: 900px) {
+/* 
+-------------------- RESPONSIVE MOBILE ------------------
+*/
+
+@media (max-width: 1024px) {
+
     html {
         font-size: 12px;
     }
 
-    h1 {
-        font-size: 3rem;
-    }
-
-    h2 {
-        font-size: 2.5rem;
-    }
-
-    #nosotros .phone-container .phone-img {
-        width: 24rem;
-        bottom: 5rem;
+    #nosotros {
+        width: 95%;
     }
 
     #nosotros .aside {
-        margin-top: 5rem;
+        width: 45%;
+        margin-top: 5vw;
     }
 
-    #nosotros .aside p {
-        width: 23rem;
+    
+}
+
+@media (max-width: 720px) {
+
+    html {
+        font-size: 12px;
+    }
+
+    .nav-container,
+    #showcase {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    #showcase .web-info {
+        width: 100%;
+    }
+
+    .nav-container {
+        height: 3.5rem;
+    }
+
+    .nav-container .nav-links {
+        position: absolute;
+        background: #0000EC;
+        top: 3.5rem;
+        left: 0;
+        width: 100%;
+        margin: 0px;
+        float: right;
+        padding: 0 5%;
+        text-align: left;
+        display: block;
+    }
+
+    .nav-container .nav-links a {
+        display: block;
+        margin: 20px 0;
+        text-decoration: none;
+    }
+
+    .nav-container a:visited {
+        color: #060A24;
     }
 
 }
-
