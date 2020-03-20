@@ -46,10 +46,13 @@ h2.white {
 
 button {
     background-color:#00F3BB;
-    padding: 1rem 3.69rem;
+    margin: 0;
+    padding: 0;
 }
 
 button a {
+    display: block;
+    padding: 1rem 3.69rem;
     font-family: 'IBM Plex Mono';
     font-weight: 500;
     font-size: 1.13rem;
@@ -60,8 +63,13 @@ button a {
     text-decoration: none; 
 }
 
+button a:hover {
+    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+    color: #FFF;
+}
+
 /* 
-------------------------NAV STYLE--------------------
+------------------------NAV DESKTOP--------------------
 */
 
 .nav-container {
@@ -83,8 +91,20 @@ button a {
 }
 
 .nav-container .nav-links a {
+    color: #060A24;
     text-decoration: none;
     margin-left: 3rem;
+}
+
+.nav-container .nav-links a:hover {
+    color: #00F3BB;
+    font-weight: 500;
+    text-decoration: line-through;
+}
+
+.nav-container .nav-links a:active {
+    color: rgba(6, 10, 36, 0.56);
+    text-decoration: line-through;
 }
 
 .nav-container a:visited {
@@ -92,7 +112,7 @@ button a {
 }
 
 /* 
-------------------------NAV MOBILE--------------------
+------------------------BUTTONS FOR NAV MOBILE--------------------
 */
 
 .show-menu-btn,
