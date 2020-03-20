@@ -74,7 +74,7 @@ button a {
 }
 
 .nav-container img {
-    width: 2.25rem;
+    width: 2rem;
     height: auto;
 }
 
@@ -101,9 +101,7 @@ button a {
 }
 
 #chk {
-    position: absolute;
-    visibility: hidden;
-    z-index: -1111;
+    display: none;
 }
 
 
@@ -284,11 +282,11 @@ footer {
 }
 
 /* 
--------------------- RESPONSIVE TABLETS ------------------
+-------------------- RESPONSIVE AREA ------------------
 */
 
 /* 
--------------------- PRIMER BREAKPOINT ------------------
+-------------------- PRIMER BREAKPOINT DESKTOP ------------------
 */
 @media (max-width: 1366px) {
 
@@ -308,8 +306,9 @@ footer {
 }
 
 /* 
--------------------- RESPONSIVE MOBILE ------------------
+-------------------- SEGUNDO BREAKPOINT DESKTOP ------------------
 */
+
 
 @media (max-width: 1024px) {
 
@@ -329,7 +328,13 @@ footer {
     
 }
 
+/* 
+-------------------- RESPONSIVE MOBILE ------------------
+*/
+
 @media (max-width: 720px) {
+
+    /* ------ GENERAL MOBILE ----- */
 
     html {
         font-size: 12px;
@@ -341,9 +346,13 @@ footer {
         width: 90%;
     }
 
+    /* ------ SHOWCASE MOBILE ----- */
+
     #showcase .web-info {
         width: 100%;
     }
+
+    /* ------ NAV MOBILE ----- */
 
     .nav-container {
         height: 3.5rem;
@@ -355,21 +364,50 @@ footer {
         top: 3.5rem;
         left: 0;
         width: 100%;
-        margin: 0px;
-        float: right;
         padding: 0 5%;
-        text-align: left;
-        display: block;
+        display: none;
     }
 
     .nav-container .nav-links a {
         display: block;
-        margin: 20px 0;
+        margin: 2rem 0;
         text-decoration: none;
+        color: #FFFFFF;
+    }
+
+    .nav-container .nav-links a:visited {
+        color: #FFFFFF;
     }
 
     .nav-container a:visited {
         color: #060A24;
     }
+
+    .show-menu-btn {
+        display: block;
+    }
+
+    .hide-menu-btn {
+        display: none;
+    }
+
+    .show-menu-btn,
+    .hide-menu-btn {
+        font-size: 1.7rem;
+    }
+
+    #chk:checked ~ .nav-links {
+        display: block;
+    }
+
+    #chk:checked~.show-menu-btn {
+        display: none;
+    }
+
+    #chk:checked~.hide-menu-btn {
+        display: block;
+    }
+
+    /* ------  ----- */
 
 }
