@@ -1,6 +1,9 @@
+/* 
+------------------------ FIRST DESKTOP DESIGN --------------------
+*/
 
 /* 
-------------------------GENERAL STYLE--------------------
+------------------------ GENERAL STYLE --------------------
 */
 
 html {
@@ -23,6 +26,7 @@ h1 {
     font-family: 'IBM Plex Sans', Verdana, sans-serif;
     font-size: 4rem;
 }
+
 h2 {
     font-family: 'IBM Plex Sans', Verdana, sans-serif;
     font-size: 3rem;
@@ -126,7 +130,7 @@ button a:hover {
 
 
 /* 
-------------------------SHOWCASE--------------------
+------------------------ SHOWCASE --------------------
 */
 
 #showcase {
@@ -301,9 +305,18 @@ footer {
     width: 100%;
 }
 
+
+
+
+
+
 /* 
 -------------------- RESPONSIVE AREA ------------------
 */
+
+
+
+
 
 /* 
 -------------------- PRIMER BREAKPOINT DESKTOP ------------------
@@ -324,6 +337,10 @@ footer {
     }
 
 }
+
+
+
+
 
 /* 
 -------------------- SEGUNDO BREAKPOINT DESKTOP ------------------
@@ -348,16 +365,26 @@ footer {
     
 }
 
-/* 
--------------------- RESPONSIVE MOBILE ------------------
-*/
+
+
+
+
+/*---------------------- RESPONSIVE MOBILE ---------------------- */
 
 @media (max-width: 720px) {
 
-    /* ------ GENERAL MOBILE ----- */
+    /* ---------------------- GENERAL MOBILE ---------------------- */
 
     html {
         font-size: 12px;
+    }
+
+    p {
+        font-size: 1.12rem;
+    }
+
+    h2 {
+        margin-left: 5%;
     }
 
     .nav-container,
@@ -366,13 +393,18 @@ footer {
         width: 90%;
     }
 
-    /* ------ SHOWCASE MOBILE ----- */
-
-    #showcase .web-info {
+    button {
+        width: 100%;
+    }
+    
+    button a {
+        padding: 1rem 0;
         width: 100%;
     }
 
-    /* ------ NAV MOBILE ----- */
+
+
+    /* ---------------------- NAV MOBILE ---------------------- */
 
     .nav-container {
         height: 3.5rem;
@@ -428,6 +460,58 @@ footer {
         display: block;
     }
 
-    /* ------  ----- */
+
+
+     /* ---------------------- SHOWCASE MOBILE ---------------------- */
+
+    #showcase {
+        margin-top: 29px;
+    }
+
+     #showcase .web-info {
+         width: 100%;
+     }
+
+
+
+     /* ---------------------- EPISODIOS MOBILE ---------------------- */
+
+     #episodios .episodios-container {
+         padding: 5rem 0;
+     }
+
+     #episodios .iframe-container {
+         width: 95%;
+         margin-top: 1.75rem;
+     }
+
+     #episodios .iframe-container div {
+        margin: 10px 0;
+        width: 100%;
+     }
+
+     /* ---------------------- NOSOTROS MOBILE ---------------------- */
+
+     #nosotros {
+         width: 100%;
+         display: block;
+     }
+
+     #nosotros .phone-container {
+         width: 100%;
+     }
+
+     #nosotros .phone-container .phone-img {
+         width: 100%;
+         bottom: 4rem;
+     }
+
+     #nosotros .aside {
+         width: 90%;
+         margin: 0 auto;
+         margin-top: 0;
+     }
+
+
 
 }
