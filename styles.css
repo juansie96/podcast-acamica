@@ -100,6 +100,8 @@ button a:hover {
     color: #060A24;
     text-decoration: none;
     margin-left: 3rem;
+    font-family: 'IBM Plex Mono';
+    font-size: 1rem;
 }
 
 .nav-container .nav-links a:hover {
@@ -408,11 +410,11 @@ footer {
 
     /* ---------------------- NAV MOBILE ---------------------- */
 
-    .nav-container {
+    .nav-container.header {
         height: 3.5rem;
     }
 
-    .nav-container .nav-links {
+    .nav-container.header .nav-links {
         position: absolute;
         background: #0000EC;
         top: 3.5rem;
@@ -422,18 +424,18 @@ footer {
         display: none;
     }
 
-    .nav-container .nav-links a {
+    .nav-container.header .nav-links a {
         display: block;
         margin: 2rem 0;
         text-decoration: none;
         color: #FFFFFF;
     }
 
-    .nav-container .nav-links a:visited {
+    .nav-container.header .nav-links a:visited {
         color: #FFFFFF;
     }
 
-    .nav-container a:visited {
+    .nav-container.header a:visited {
         color: #060A24;
     }
 
@@ -567,6 +569,22 @@ footer {
 
      #novedades button {
          margin-top: 2.25rem;
+     }
+
+     /* ---------------------- FOOTER MOBILE ---------------------- */
+
+     footer {
+         padding: 1rem 0;
+     }
+
+     .nav-container.footer {
+        flex-direction: column;
+        justify-content: space-around;
+     }
+
+     .nav-container.footer .nav-links a {
+         margin: 0 20px;
+         font-size: 16px;
      }
 
 
