@@ -25,6 +25,7 @@ p {
 h1 {
     font-family: 'IBM Plex Sans', Verdana, sans-serif;
     font-size: 4rem;
+    line-height: 42px;
 }
 
 h2 {
@@ -32,6 +33,7 @@ h2 {
     font-size: 3rem;
     letter-spacing: 0;
     margin-left: 13%;
+    line-height: 42px;
 }
 
 h2.white {
@@ -59,7 +61,7 @@ button a {
     padding: 1rem 3.69rem;
     font-family: 'IBM Plex Mono';
     font-weight: 500;
-    font-size: 1.13rem;
+    font-size: 1.33rem;
     color: #060A24;
     letter-spacing: 0;
     text-align: center;
@@ -510,6 +512,61 @@ footer {
          width: 90%;
          margin: 0 auto;
          margin-top: 0;
+     }
+
+     /* ---------------------- ENTREVISTAS MOBILE ---------------------- */
+
+
+     #entrevistas {
+         margin-top: 4.5rem;
+     }
+
+     #entrevistas .photos img {
+         width: 100%;
+     }
+
+
+     /* ---------------------- TOPICOS MOBILE ---------------------- */
+
+     #topicos .topicos-container {
+         display: block;
+         margin-top: 0;
+     }
+
+     #topicos .single-topic-container {
+         text-align: center;
+         width: 100%;
+         margin-top: 6rem;
+     }
+
+     #topicos .single-topic-container img {
+         width: 40%;
+     }
+
+     #topicos h3 {
+         font-size: 2rem;
+         margin-top: 1rem;
+     }
+
+     /* ---------------------- NOVEDADES MOBILE ---------------------- */
+
+
+     #novedades h2 {
+        margin-left: 0;
+        font-weight: 400;
+     }
+
+     #novedades .novedades-container {
+         width: 90%;
+         margin: 0 auto;
+         padding-top: 5rem;
+         padding-bottom: 12rem;
+         align-items: center;
+         text-align: center;
+     }
+
+     #novedades button {
+         margin-top: 2.25rem;
      }
 
 
