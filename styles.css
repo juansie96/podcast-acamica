@@ -431,14 +431,6 @@ footer {
         color: #FFFFFF;
     }
 
-    .nav-container.header .nav-links a:visited {
-        color: #FFFFFF;
-    }
-
-    .nav-container.header a:visited {
-        color: #060A24;
-    }
-
     .show-menu-btn {
         display: block;
     }
