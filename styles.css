@@ -50,13 +50,14 @@ h2.white {
     transform: skew(0deg, 5deg);
 }
 
-button {
+.button {
     background-color:#00F3BB;
     margin: 0;
     padding: 0;
+    display: inline-block;
 }
 
-button a {
+.button a {
     display: block;
     padding: 1rem 3.69rem;
     font-family: 'IBM Plex Mono';
@@ -69,7 +70,7 @@ button a {
     text-decoration: none; 
 }
 
-button a:hover {
+.button a:hover {
     background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
     color: #FFF;
 }
@@ -143,6 +144,10 @@ button a:hover {
     margin-top: 7.5rem;
 }
 
+#showcase .line-through {
+    text-decoration: line-through;
+}
+
 #showcase .blue-dot {
     color: blue;
 }
@@ -151,7 +156,7 @@ button a:hover {
     width: 55%;
 }
 
-#showcase button {
+#showcase .button {
     margin-top: 3.5rem;
 }
 
@@ -167,7 +172,7 @@ button a:hover {
     padding: 10rem 0;
 }
 
-#episodios .iframe-container {
+#episodios .iframes-container {
     width: 90%;
     margin: auto;
     display: flex;
@@ -176,10 +181,17 @@ button a:hover {
     margin-bottom: 1.3rem;
 }
 
-#episodios .iframe-container div {
+#episodios .iframes-container .single-iframe-container {
     margin: 20px 0;
     box-sizing: border-box;
     width: 45%;
+}
+
+#episodios .iframes-container .single-iframe-container iframe {
+    width: 100%;
+    height: 232px;
+    border: 0px;
+    background-color: transparent;
 }
 
 /* 
@@ -291,7 +303,7 @@ button a:hover {
     text-align: center; 
 }
 
-#novedades button {
+#novedades .button {
     margin-top: 2.25rem;
 }
 
@@ -397,11 +409,11 @@ footer {
         width: 90%;
     }
 
-    button {
+    .button {
         width: 100%;
     }
     
-    button a {
+    .button a {
         padding: 1rem 0;
         width: 100%;
     }
@@ -476,12 +488,12 @@ footer {
          padding: 5rem 0;
      }
 
-     #episodios .iframe-container {
+     #episodios .iframes-container {
          width: 95%;
          margin-top: 1.75rem;
      }
 
-     #episodios .iframe-container div {
+     #episodios .iframes-container .single-iframe-container {
         margin: 10px 0;
         width: 100%;
      }
@@ -517,6 +529,7 @@ footer {
 
      #entrevistas .photos img {
          width: 100%;
+         height: auto;
      }
 
 
@@ -554,12 +567,12 @@ footer {
          width: 90%;
          margin: 0 auto;
          padding-top: 5rem;
-         padding-bottom: 12rem;
+         padding-bottom: 11rem;
          align-items: center;
          text-align: center;
      }
 
-     #novedades button {
+     #novedades .button {
          margin-top: 2.25rem;
      }
 
